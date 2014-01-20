@@ -1,0 +1,31 @@
+{
+  "name": "whisklabs-zookeeper",
+  "version": "0.0.5",
+  "source": "UNKNOWN",
+  "author": "whisklabs",
+  "license": "Apache License, Version 2.0",
+  "summary": "UNKNOWN",
+  "description": "Puppet Zookeper module",
+  "project_page": "UNKNOWN",
+  "dependencies": [
+    {
+      "name": "puppetlabs/java",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "7bc8ea7d0d935b380157ac00d7b79b86",
+    "README.md": "22852d9ba442f0f41dea9cc31dc3ae57",
+    "manifests/init.pp": "994618884f95469f35a4b2e7eb247272",
+    "manifests/package.pp": "9854d06d6477c34a4a31cefc5d1ba5d4",
+    "manifests/params.pp": "8ca4a3671baa75b5635a8cce60843558",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "templates/conf/environment": "32be986d35f9e39652f0b09a9d2abae0",
+    "templates/conf/zoo.cfg": "12709f57439d7a82a2cb3cb8847a736a",
+    "templates/init/zookeeper.conf": "a6b00cdec8ad1f5443731f61a6326ffa",
+    "tests/init.pp": "bba5d6d9e172eeabce38d4532ca30343"
+  }
+}

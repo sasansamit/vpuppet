@@ -1,0 +1,25 @@
+[main]
+
+    # The log level for Rails connections.  The value must be
+    # a valid log level within Rails.  Production environments normally use `info`
+    # and other environments normally use `debug`.
+    # The default value is 'info'.
+    rails_loglevel = info
+
+
+    # The search path for modules, as a list of directories separated by the system path separator character. (The POSIX path separator is ':', and the Windows path separator is ';'.)
+    # The default value is '$confdir/modules:/usr/share/puppet/modules'.
+    modulepath = /etc/puppet/modules:/usr/share/puppet/modules:/vagrant/modules
+
+[agent]
+    # The server to which server puppet agent should connect
+    # The default value is 'puppet'.
+    server = <%= @masterNode %>
+
+    # How often puppet agent applies the client configuration; in seconds.
+    # Note that a runinterval of 0 means "run continuously" rather than
+    # "never run." If you want puppet agent to never run, you should start
+    # it with the `--no-client` option.
+    # The default value is '1800'.
+    runinterval = 5
+
